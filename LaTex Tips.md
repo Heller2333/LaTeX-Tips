@@ -14,8 +14,35 @@
 ## 不同环境
 
 1. 本地+Github
+
+   1. 合作方式：加入同一个GitHub仓库，pull之后在本地编译，修改之后push到远程
+   2. 本地常用的IDE
+      1. vscode
+      2. sublime
+
+   3. Github：推荐使用[GitHub Desktop](https://desktop.github.com)进行操作，比git命令行简洁
+      1. 解决Github Desktop push/pull较慢的问题：将GitHub相关的域名IP写入host文件，参考[这篇博客](https://blog.csdn.net/hongxue8888/article/details/103855883)中的做法
+
 2. overleaf
-3. iguanatex
+
+   1. [NJU LaTeX](https://tex.nju.edu.cn/)
+      1. 优点：快
+      2. 缺点：似乎同一份和overleaf官方网站编译的结果有格式上的差异？
+
+   2. [overleaf](https://cn.overleaf.com/)
+      1. 优点：准确
+      2. 缺点：编译较慢，连接不稳定
+
+3. [iguanatex](https://github.com/Jonathan-LeRoux/IguanaTex/blob/v1.60.2/README.md)
+
+   1. 用途：用于在ppt中插入LaTeX公式
+
+   2. 小技巧：
+
+      1. 可以将常用的宏设为默认，以符合自己的使用习惯
+
+      <img src="./images/IguanaTeX.png" alt="image-20220919215903881" style="zoom:50%;" />
+
 
 
 
@@ -50,7 +77,13 @@
 
 5. \setcounter{AlgoLine}{0}——从1开始
 
-6. 定义宏：
+6. \paragraph and \textbf
+
+7. \input
+
+8. command file
+
+9. 定义宏：
 
    1. \newcommand\sbr[1]{\left( #1 \right)}
    2. \newcommand\inner[2]{\langle #1, #2 \rangle}
