@@ -1,5 +1,12 @@
 # 写作经验整理
 
+
+## LaTeX简介
+
+### LaTeX文件类型
+1. tex文件 
+2. sty文件
+3. bib文件
 ## 语法
 
 1. 行内公式或\emph中的内容最好放在一行，通过换表达方法避免换行
@@ -17,8 +24,8 @@
 
    1. 合作方式：加入同一个GitHub仓库，pull之后在本地编译，修改之后push到远程
    2. 本地常用的IDE
-      1. vscode
-      2. sublime
+      1. [VSCode](./VSCode使用.md)
+      2. [Sublime](./Sublime使用.md)
 
    3. Github：推荐使用[GitHub Desktop](https://desktop.github.com)进行操作，比git命令行简洁
       1. 解决Github Desktop push/pull较慢的问题：将GitHub相关的域名IP写入host文件，参考[这篇博客](https://blog.csdn.net/hongxue8888/article/details/103855883)中的做法
@@ -83,20 +90,32 @@
 
 8. command file
 
-9. 定义宏：
+9. 更改页面大小：\usepackage[a4paper, total={7cm, 4in}]{geometry}
 
-   1. \newcommand\sbr[1]{\left( #1 \right)}
-   2. \newcommand\inner[2]{\langle #1, #2 \rangle}
+10. 自定义字体背景色
 
+   ```latex
+   \usepackage{color,soul} # 相关包
+   \definecolor{myYel}{rgb}{1,1,0.69} # 定义颜色 
+   \DeclareRobustCommand{\hly}[1]{{\sethlcolor{myYel}\hl{#1}}} # 定义字体背景色命令
+   \hly{some information of $f_t$} # 使用
+   ```
    
+11. 定义宏：
 
-   
+    1. \newcommand\sbr[1]{\left( #1 \right)}
+    2. \newcommand\inner[2]{\langle #1, #2 \rangle}
+
+12. 
+    
+
+    
 
 ### 图片
 
 ### 表格
 
-1. 
+### 引用
 
 ## 写作经验
 
