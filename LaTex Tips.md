@@ -106,7 +106,15 @@
     1. \newcommand\sbr[1]{\left( #1 \right)}
     2. \newcommand\inner[2]{\langle #1, #2 \rangle}
 
-12. 
+12. Reference显示bib文件的所有引用内容（未在正文中\cite的也显示）
+   ```latex
+   \nocite{*}
+   \bibliography{xxx}
+   ```
+   注：可以做debug用，正常情况下不要开启
+
+13. 当篇幅不符合要求（过长或过短）
+   在overleaf中更换TeX Live版本，有些版本编译出来的篇幅较长、有些较短，这种方法不会影响正文内容的正常显示
   
   
   
