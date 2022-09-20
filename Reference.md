@@ -1,9 +1,16 @@
 # Reference规范
 
-## 会议
+## Tips
+1. [Google Scholar]()以及[DBLP]()
+2. 有些专有名词需要大写。Latex会自动将除首字母之外的部分变成小写，需要加{ }
+3. 人名需要注意，如果署名是Lijun Zhang，那么reference中的缩写就是L. Zhang，如果署名是Zhi-Hua Zhou，缩写就是Z.-H. Zhou
+4. 使用{\citep[Lemma 12]{ArXiv'21:SCREAM-Zhao}} 来引用论文中的某个定理
+
+## 著名会议/期刊引用举例
+### 会议
 一些机器学习/学习理论著名会议：[AISTATS](#AISTATS), [COLT](#COLT), [NeurIPS](#NeurIPS), [ICML](#ICML), [AAAI](#ICML), [IJCAI](#IJCAI), [UAI](#UAI)等的引用规范
 
-<span id="AISTATS">AISTATS</span>
+<span id="AISTATS">**AISTATS**</span>
 ```latex
   @inproceedings{AISTATS'11:smooth-BCO,
   author    = {Ankan Saha and
@@ -16,7 +23,7 @@
 }
 ```
 
-<span id="COLT">COLT</span>
+<span id="COLT">**COLT**</span>
 ```latex
   @inproceedings{COLT'21:Yu-Xiang,
   author    = {Dheeraj Baby and
@@ -28,7 +35,7 @@
 }
 ```
 
-<span id="NeurIPS">NeurIPS</span>
+<span id="NeurIPS">**NeurIPS**</span>
 ```latex
 @inproceedings{NIPS'15:OCOmemory,
   author    = {Oren Anava and
@@ -45,7 +52,7 @@
 <img src="./images/NeurIPS.png" style="zoom:50%;" />
 2. NeurIPS虽然是会议，但是其名称没有Proceedings of
 
-<span id="ICML">ICML</span>
+<span id="ICML">**ICML**</span>
 ```latex
 @inproceedings{ICML'19:online-control,
   author    = {Naman Agarwal and
@@ -60,7 +67,7 @@
 }
 ```
 
-<span id="AAAI">AAAI</span>
+<span id="AAAI">**AAAI**</span>
 ```latex
 @inproceedings{AAAI'21:UnseenJob,
     author = {Yu-Jie Zhang and Yu-Hu Yan and Peng Zhao and Zhi-Hua Zhou},
@@ -71,7 +78,7 @@
 }
 ```
 
-<span id="IJCAI">IJCAI</span>
+<span id="IJCAI">**IJCAI**</span>
 ```latex
 @inproceedings{IJCAI'20:zhanglj-changing,
   author    = {Lijun Zhang},
@@ -82,7 +89,7 @@
 }
 ```
 
-<span id="UAI">UAI</span>
+<span id="UAI">**UAI**</span>
 ```latex
 @inproceedings{UAI'20:SLB,
   author    = {Baekjin Kim and
@@ -94,10 +101,10 @@
 }
 ```
 
-## 期刊
+### 期刊
 一些机器学习/学习理论著名期刊：[JMLR](#JMLR), [TPAMI](#TPAMI), [arXiv](#arXiv)等的引用规范
 
-<span id="JMLR">JMLR</span>
+<span id="JMLR">**JMLR**</span>
 ```latex
 @article{JMLR'21:BCO,
     author = {Peng Zhao and
@@ -113,7 +120,7 @@
 }
 ```
 
-<span id="TPAMI">TPAMI</span>
+<span id="TPAMI">**TPAMI**</span>
 ```latex
 @article{TPAMI'21:Safe,
     author = {Yu-Feng Li and
@@ -128,7 +135,7 @@
 }
 ```
 
-<span id="arXiv">arXiv</span>
+<span id="arXiv">**arXiv**</span>
 ```latex
 @article{arXiv'22:rate-optimal,
   author    = {Asaf Cassel and

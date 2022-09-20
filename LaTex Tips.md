@@ -107,9 +107,9 @@
     2. \newcommand\inner[2]{\langle #1, #2 \rangle}
 
 12. 
-    
-
-    
+  
+  
+  
 
 ### 图片
 
