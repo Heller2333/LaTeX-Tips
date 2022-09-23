@@ -18,7 +18,7 @@
 
 
 
-## 不同环境
+## 平台
 
 1. 本地+Github
 
@@ -28,7 +28,7 @@
       2. [Sublime](./Sublime使用.md)
 
    3. Github：推荐使用[GitHub Desktop](https://desktop.github.com)进行操作，比git命令行简洁
-      1. 解决Github Desktop push/pull较慢的问题：将GitHub相关的域名IP写入host文件，参考[这篇博客](https://blog.csdn.net/hongxue8888/article/details/103855883)中的做法
+      1. 解决Github Desktop push/pull较慢的问题：将GitHub相关的域名IP写入host文件，参考[这篇博客](https://blog.csdn.net/hongxue8888/article/details/103855883)中的做法——域名IP经常会变，当发现push/pull再次发生卡顿时，重新查询IP地址并且将其写入host文件
 
 2. overleaf
 
@@ -40,24 +40,23 @@
       1. 优点：准确
       2. 缺点：编译较慢，连接不稳定
 
-3. [iguanatex](https://github.com/Jonathan-LeRoux/IguanaTex/blob/v1.60.2/README.md)
+## 工具
+1. [IguanaTex](https://github.com/Jonathan-LeRoux/IguanaTex/blob/v1.60.2/README.md) <span id="IguanaTex"></span>
+   1. **用途**：用于在ppt中插入LaTeX公式
 
-   1. 用途：用于在ppt中插入LaTeX公式
-
-   2. 小技巧：
-
-      1. 可以将常用的宏设为默认，以符合自己的使用习惯
+   2. **设置常用模板**：可以将常用的宏设为默认，以符合自己的使用习惯
 
       <img src="./images/IguanaTeX.png" alt="image-20220919215903881" style="zoom:50%;" />
 
+2. 语法检查：[Grammarly](https://app.grammarly.com/), [WordTune](https://app.wordtune.com/)
 
-
+3. LaTeX OCR [mathpix](https://mathpix.com/)：从图片中识别LaTeX公式，适合与[IguanaTex](#IguanaTex)配合使用。
 
 ## LaTeX技巧
 
 1. 如果有很多章节，不同章节使用一个TeX文件单独写，使用input命令插入即可，使得文件的逻辑更加清晰
-2. 使用\textbf{xxxx}~~ 可以达到与\paragraph{xxxx}类似的效果，区别在于段落间的间距更小，节省空间
-3. 当需要插入多幅图片时
+2. 使用\textbf{xxxx}~~ 可以达到与\paragraph{xxxx}类似的效果，区别在于前者段落间的间距更小，可以在需要节省空间时使用。
+3. 当需要插入多幅图片时：
 
 ```latex
 \begin{figure*}[!t]
@@ -115,15 +114,16 @@
 
 13. 当篇幅不符合要求（过长或过短）
    在overleaf中更换TeX Live版本，有些版本编译出来的篇幅较长、有些较短，这种方法不会影响正文内容的正常显示
+
   
-  
-  
+
 
 ### 图片
 
 ### 表格
 
 ### 引用
+请参考[该文件](./Reference.md)。
 
 ## 写作经验
 
