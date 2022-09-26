@@ -115,6 +115,35 @@
 13. 当篇幅不符合要求（过长或过短）
    在overleaf中更换TeX Live版本，有些版本编译出来的篇幅较长、有些较短，这种方法不会影响正文内容的正常显示
 
+14. 文章中引用公式要用\eqref{}而非直接用\ref{}
+15. bib文件里面大写的内容要单独用花括号括起来，例如
+```latex
+@article{CACM'21:DL-AI,
+  author = {Bengio, Yoshua and Lecun, Yann and Hinton, Geoffrey},
+  title = {Deep Learning for {AI}},
+  year = {2021},
+  volume = {64},
+  number = {7},
+  journal = {Communication of {ACM}},
+  pages = {58–65},
+}
+```
+
+16. 竖线的使用
+* 集合里用\mid，例如
+```latex
+${x \mid \norm{x}_2 \geq 1}$
+```
+* 条件概率用\given，定义如下
+```latex
+\newcommand\given[1][]{\:#1\vert\:}
+\newcommand\givenn[1][]{\:#1\middle\vert\:}
+```
+17. 示性函数用如下定义，不要用\mathbb{I}
+```latex
+\def \indicator {\mathbbm{1}}
+```
+
   
 
 
