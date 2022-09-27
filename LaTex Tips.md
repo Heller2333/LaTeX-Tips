@@ -48,9 +48,13 @@
 
       <img src="./images/IguanaTeX.png" alt="image-20220919215903881" style="zoom:50%;" />
 
+   3. **Tips**: ctrl+z会回退到上一次编译时的状态，而不是上一次操作，在IguanaTex中要慎用撤回键！
+
 2. 语法检查：[Grammarly](https://app.grammarly.com/), [WordTune](https://app.wordtune.com/)
 
 3. LaTeX OCR [mathpix](https://mathpix.com/)：从图片中识别LaTeX公式，适合与[IguanaTex](#IguanaTex)配合使用。
+
+
 
 ## LaTeX技巧
 
@@ -148,8 +152,13 @@ ${x \mid \norm{x}_2 \geq 1}$
 
 
 ### 图片
+1. 插入图片需要使用pdf，否则放大之后会模糊
 
 ### 表格
+1. 要在图例中对表格的内容充分的解释。
+2. 控制表格宽度
+3. 控制表格行高
+4. \label要在\caption后面，否则虽然不会报错，但实际的编号是错的
 
 ### 引用
 请参考[该文件](./Reference.md)。
@@ -163,3 +172,16 @@ ${x \mid \norm{x}_2 \geq 1}$
 
 
 
+## 其他
+### 论文匿名化
+**匿名化工具**：[Anonymous GitHub](https://anonymous.4open.science/)，用于论文中或者rebuttal期间匿名提交代码/图片等补充材料
+
+**使用**：
+1. 访问[Anonymous GitHub](https://anonymous.4open.science/), 利用github账号登录
+2. 选择要匿名化的repo
+3. 自定义有效期，以及匿名化后的名称
+4. 这个网页会自动处理你的仓库，然后替换你填写的需要匿名化的关键字，然后给出一个网页url，就是匿名后的repo地址
+
+## 参考资料
+1. [常见符号及其对应的LaTeX表示](./materials/LatexSymbol.pdf)
+2. 赵鹏师兄之前做的[相关内容](./materials/LaTeXAcademicWriting.pdf)

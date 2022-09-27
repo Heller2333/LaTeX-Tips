@@ -1,7 +1,7 @@
 # Reference规范
 
 ## Tips
-1. **bib来源**：[Google Scholar](https://scholar.google.com/)以及[DBLP](https://dblp.org/)上可以得到论文的bib描述。要注意的是，这里的bib可能不符合我们的规范，仍需参考[著名会议/期刊引用举例](#举例)引用进行规范化。
+1. **bib来源**：[Google Scholar](https://scholar.google.com/)以及[DBLP](https://dblp.org/)上可以得到论文的bib描述。要注意的是：1）这里的bib可能不符合我们的规范，仍需参考[著名会议/期刊引用举例](#举例)引用进行规范化；2）相比于Google Scholar，DBLP更专注于计算机类的文献，提供的bibtex质量更好一些
 2. **专有名词大写**：LaTeX会自动将除首字母之外的部分变成小写，需要加大括号{}保持大写，例如{IEEE} Transactions on Information Theory中需要对IEEE添加{}使其保持大写。
 3. **人名**：中国人名需要注意格式，如果署名是Lijun Zhang，那么reference中的缩写就是L. Zhang，如果署名是Zhi-Hua Zhou，缩写就是Z.-H. Zhou。具体采用哪种方式需以该学者对自己论文的引用中的格式为主。
 4. **引用特定定理**：使用{\citep[Lemma 12]{ArXiv'21:SCREAM-Zhao}} 来引用论文中的特定定理。
