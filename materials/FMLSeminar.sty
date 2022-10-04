@@ -1,0 +1,125 @@
+%%%%%%%%%%% beamer theme settings %%%%%%%%%%%
+% Use Madrid as defualt theme
+\usetheme{Madrid}
+
+% Define the color we use
+\definecolor{NJUPurple}{RGB}{106,0,95}
+
+% Set theme color
+\usecolortheme[RGB={106,0,95}]{structure}
+
+% Set theme font
+% \setbeamerfont{frametitle}{size=\tiny}
+\usefonttheme{professionalfonts}
+
+% Contents items: default (triangle), circle, square, ball
+\setbeamertemplate{section in toc}[square]
+
+% Set subsection toc as triangle
+\setbeamertemplate{subsection in toc}{%
+\leavevmode\leftskip=5.65ex%
+  \llap{\raisebox{0.2ex}{\textcolor{structure}{$\blacktriangleright$}}\kern1ex}%
+  \inserttocsubsection\par%
+}
+
+% Set the subsection color
+\setbeamercolor{subsection in toc}{fg=NJUPurple}
+
+% Itemize items: default (triangle), circle, square, ball
+\setbeamertemplate{itemize items}[square]
+
+% Enumerate items: default, circle, square, ball
+\setbeamertemplate{enumerate items}[square]
+
+% Part page:
+\setbeamertemplate{part page}[default][colsep=-4bp,rounded=true]
+
+% Frame title:
+%% Define the horizon rule that can be tuned the thickness
+\makeatletter
+   \def\vhrulefill#1{\leavevmode\leaders\hrule\@height#1\hfill \kern\z@}
+\makeatother
+%% Define the frametitle with horizon rule
+\setbeamertemplate{frametitle}{\color{black}\bfseries{\LARGE \insertframetitle}\par\vskip-5pt\color{NJUPurple}\vhrulefill{2pt}}
+
+% Get rid of the footer
+\setbeamertemplate{footline}{}
+
+% Make beamer math looks more professional
+% \usefonttheme[onlymath]{serif} 
+
+% Make example blocks color unified
+\setbeamercolor{block title example}{bg=NJUPurple}
+
+% Redefine the title page
+\defbeamertemplate*{title page}{customized}[1][]
+{
+  \vfill
+  \vskip0.5em\par 
+  \begingroup
+    \centering
+    \parbox{12cm}{%
+      \centering     
+      \LARGE\usebeamercolor[black]{title}\bfseries\inserttitle\par%
+      \ifx\insertsubtitle\@empty%
+      \else\vskip.5ex%
+        {\usebeamerfont{subtitle}\usebeamercolor[fg]{subtitle}
+        \insertsubtitle\par}%
+      \fi}
+    \vskip3em\par
+    \parbox{12cm}{
+      \centering
+      {\footnotesize\itshape Presented by} {\footnotesize \insertauthor}\par
+      {\footnotesize \insertinstitute}\par
+      {\scriptsize \insertdate}\par
+    }
+    {\usebeamercolor[fg]{titlegraphic}\inserttitlegraphic\par}
+  \endgroup
+  
+}
+
+% Insert the logo. Notice that because we hack the position directly, so when changing the picture,
+% you may have to relocate the position by tuning the \put parameter
+\titlegraphic{%
+  \begin{picture}(0,0)
+    \put(50,160){\makebox(0,0)[rt]{\includegraphics[width=1cm]{logo/Nanjing_University_Logo.png} \quad \includegraphics[width=3cm]{logo/lamda_logo.png}}}
+  \end{picture}} 
+
+
+% define theorem, corollary, fact, lemma, problem, solution, assumption, definition, example blocks
+\setbeamertemplate{theorem}[ams style]
+\setbeamertemplate{theorems}[numbered]
+
+\makeatletter
+    \ifbeamer@countsect
+      \newtheorem{theorem}{\translate{Theorem}}[section]
+    \else
+      \newtheorem{theorem}{\translate{Theorem}}
+    \fi
+    \newtheorem{corollary}{\translate{Corollary}}
+    \newtheorem{fact}{\translate{Fact}}
+    \newtheorem{lemma}{\translate{Lemma}}
+    \newtheorem{problem}{\translate{Problem}}
+    \newtheorem{solution}{\translate{Solution}}
+    \newtheorem{assumption}{\translate{Assumption}}
+
+    \theoremstyle{definition}
+    \newtheorem{definition}{\translate{Definition}}
+    \newtheorem{definitions}{\translate{Definitions}}
+
+    \theoremstyle{example}
+    \newtheorem{example}{\translate{Example}}
+    \newtheorem{examples}{\translate{Examples}}
+
+
+    % Compatibility
+    \newenvironment{Lemma}{\begin{lemma}}{\end{lemma}}
+    \newenvironment{Proof}{\begin{proof}}{\end{proof}}
+    \newenvironment{Theorem}{\begin{theorem}}{\end{theorem}}
+    \newenvironment{Problem}{\begin{problem}}{\end{problem}}
+    \newenvironment{Corollary}{\begin{corollary}}{\end{corollary}}
+    \newenvironment{Example}{\begin{example}}{\end{example}}
+    \newenvironment{Examples}{\begin{examples}}{\end{examples}}
+    \newenvironment{Definition}{\begin{definition}}{\end{definition}}
+    \newenvironment{Assumption}{\begin{assumption}}{\end{assumption}}
+\makeatother

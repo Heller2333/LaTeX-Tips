@@ -21,12 +21,12 @@
    3. **适合使用Overleaf的场景**：在最终定稿阶段，Overleaf的编译结果最准确。相同的内容在两个平台上编译出来的篇幅是不同的，该问题目前仍未解决。
    4. Grammarly插件：Overleaf textarea
    5. **解锁无限合作者以及无限历史记录权限**：Overleaf官方规定如果能拉10个新用户，就可以解锁该权限，淘宝上有相关服务。
-   <div align=center><img src="./images/Overleaf.png" alt="" style="zoom:20%;"/></div>
+   <div align=center><img src="../images/Overleaf.png" alt="" style="zoom:20%;"/></div>
 
 ## Github和Overleaf之间的协作/同步
 <div></div>
     1. 在Overleaf编辑页面点击菜单，可以看到如下选项：
-    <div align=center><img src="./images/Overleaf-Github-1.png" alt="" style="zoom:40%;"/></div>
+    <div align=center><img src="../images/Overleaf-Github-1.png" alt="" style="zoom:40%;"/></div>
 <div></div>  
     2. 点击"Github"选项，即可快速进行Github到Overleaf，或是Overleaf到Github的同步。
-    <div align=center><img src="./images/Overleaf-Github-2.png" alt="" style="zoom:50%;"/></div>
+    <div align=center><img src="../images/Overleaf-Github-2.png" alt="" style="zoom:50%;"/></div>

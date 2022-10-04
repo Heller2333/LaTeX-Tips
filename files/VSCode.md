@@ -7,11 +7,13 @@
 2. Code Spell Checker：语法拼写检查
 3. Grammarly: 登录Grammarly账号即可在VSCode本地进行语法检查
 
+**注**：安装插件之后需要重启VSCode。
+
 ## Windows
 1. [TeX Live 下载与安装](https://tug.org/texlive/acquire-iso.html)
 2. 下载安装VScode
 3. 安装LaTeX Workshop插件
-4. Latex环境配置，参考配置见[该文件](./materials/LaTeX_ENV.md)（可按需修改, 尤其要修改相关路径）
+4. Latex环境配置，参考配置见[该文件](../materials/LaTeX_ENV.md)（可按需修改, 尤其要修改相关路径）
 
 
 

@@ -25,7 +25,7 @@
 9. Method/approach是方法论层面，algorithm是具体实现
 
 ## 平台
-包括两种：本地+Github、Overleaf以及两种平台之间的同步方式，请参考[该篇笔记](./Platform.md)。
+包括两种：本地+Github、Overleaf以及两种平台之间的同步方式，请参考[该篇笔记](./files/Platform.md)。
 
 ## 工具
 
@@ -148,10 +148,10 @@
 4. ```\label```要在```\caption```后面，否则虽然不会报错，但实际的编号是错的
 
 ### 引用
-包括引用规范与常见会议/期刊的引用举例，请参考[该篇笔记](./Reference.md)。
+包括引用规范与常见会议/期刊的引用举例，请参考[该篇笔记](./files/Reference.md)。
 
 ### 宏
-将常用符号以及操作符定义为宏，请参考[该文件](./macros.tex)。
+将常用符号以及操作符定义为宏，请参考[该文件](./files/macros.tex)。
 
 ### 多文件编译
 常用于投稿时产生正文与附录，假设正文位于```main.tex```中，附录位于```supp.tex```中 ：
@@ -166,16 +166,19 @@
 
 \end{document}
 ```
-```\input```命令的本质是粘贴，```supp.tex```中不需要有完整的文件结构，只需要有LaTeX代码片段即可。
+```\input```命令的本质是粘贴，```supp.tex```中不需要有完整的文件结构，只需要有LaTeX代码片段即可。进行编译时只需要编译```main.tex```文件即可。
 
-2. **作为不同文件编译**：在```main.tex```开头加入
+2. **作为不同文件编译**：核心问题在于跨文件引用公式、定理等。具体做法为在```main.tex```开头加入
 ```latex
 \usepackage{xr}
 \externaldocument{supp}
 ```
 在```supp.tex```开头加入
 ```latex
+\usepackage{xr}
+\externaldocument{main}
 ```
+之后即可跨文件引用公式、定理等。进行编译时需要分别编译```main.tex```以及```supp.tex```。
 
 ## 写作经验
 
@@ -197,6 +200,9 @@
 4. 这个网页会自动处理你的仓库，然后替换你填写的需要匿名化的关键字，然后给出一个网页url，就是匿名后的repo地址
 
 ### Beamer
+使用LaTeX制作ppt
+TODO
+
 
 ## 参考资料
 
