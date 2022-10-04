@@ -151,7 +151,7 @@
 包括引用规范与常见会议/期刊的引用举例，请参考[该篇笔记](./files/Reference.md)。
 
 ### 宏
-将常用符号以及操作符定义为宏，请参考[该文件](./files/macros.tex)。
+将常用符号以及操作符定义为宏，请参考[该文件](./files/macros.md)。
 
 ### 多文件编译
 常用于投稿时产生正文与附录，假设正文位于```main.tex```中，附录位于```supp.tex```中 ：
@@ -159,7 +159,7 @@
 ```latex
 \bibliography{xxx} % bib文件
 
-% 添加附录，使用\input命令将supplementary.tex中的内容加入
+% 添加附录，使用\input命令将supp.tex中的内容加入
 \newpage
 \appendix
 \input{supp}
@@ -179,6 +179,8 @@
 \externaldocument{main}
 ```
 之后即可跨文件引用公式、定理等。进行编译时需要分别编译```main.tex```以及```supp.tex```。
+
+定理序号衔接：使用setcounter命令——TODO
 
 ## 写作经验
 
