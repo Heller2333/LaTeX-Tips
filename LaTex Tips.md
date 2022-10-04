@@ -39,11 +39,11 @@
    
    3. **Tips**: ctrl+z会回退到上一次编译时的状态，而不是上一次操作，在IguanaTex中要慎用撤回键！
 
-   4. \usepackage[a4paper, total={4.4cm, 4in}]{geometry}
+   4. **设置页面宽度**：```\usepackage[a4paper, total={4.4cm, 4in}]{geometry}```
 
-2. 语法检查：[Grammarly](https://app.grammarly.com/), [WordTune](https://app.wordtune.com/)
+2. **语法检查**：[Grammarly](https://app.grammarly.com/), [WordTune](https://app.wordtune.com/)
 
-3. LaTeX OCR [mathpix](https://mathpix.com/)：从图片中识别LaTeX公式，适合与[IguanaTex](#IguanaTex)配合使用。
+3. **LaTeX OCR**：[mathpix](https://mathpix.com/)——从图片中识别LaTeX公式，适合与[IguanaTex](#IguanaTex)配合使用。
 
 ## LaTeX技巧
 

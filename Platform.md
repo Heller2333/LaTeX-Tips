@@ -4,16 +4,16 @@
 
 ## 本地+Github
    
-   1. 合作方式：加入同一个GitHub仓库，pull之后在本地编译，修改之后push到远程
+   1. **合作方式**：加入同一个GitHub仓库，pull之后在本地编译，修改之后push到远程
    
-   2. 本地常用的IDE
+   2. **本地IDE**
       
-      1. [VSCode](./VSCode使用.md)
-      2. [Sublime](./Sublime使用.md)
+      1. [VSCode](./VSCode.md)
+      2. [Sublime](./Sublime.md)
    
-   3. Github：推荐使用[GitHub Desktop](https://desktop.github.com)进行操作，比git命令行简洁
+   3. **Github**：推荐使用[GitHub Desktop](https://desktop.github.com)进行操作，比git命令行简洁
       
-      1. 解决Github Desktop push/pull较慢的问题：将GitHub相关的域名IP写入host文件，参考[这篇博客](https://blog.csdn.net/hongxue8888/article/details/103855883)中的做法——域名IP经常会变，当发现push/pull再次发生卡顿时，重新查询IP地址并且将其写入host文件
+      1. **解决Github Desktop push/pull较慢的问题**：将GitHub相关的域名IP写入host文件，参考[这篇博客](https://blog.csdn.net/hongxue8888/article/details/103855883)中的做法——域名IP经常会变，当发现push/pull再次发生卡顿时，重新查询IP地址并且将其写入host文件
 
 ## Overleaf
    1. **两种选择**：[Overleaf](https://cn.overleaf.com/)与[NJU LaTeX](https://tex.nju.edu.cn/)
