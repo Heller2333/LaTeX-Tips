@@ -50,7 +50,41 @@
 \newcommand{\Authornote}[2]{{\small\textcolor{DSgray}{\sf$<<<${  #1: #2
 }$>>>$}}}
 \newcommand{\xxnote}[1]{{\Authornote{XX-XX}{#1}}}
+
+% 定义公式环境
+\let\proof\relax
+\let\endproof\relax
+\usepackage{amsthm}
+\let\proof\relax
+\let\endproof\relax
+\def \endenv {\hfill\raisebox{1pt}{$\P$}\smallskip}
+\newenvironment{proof}{\par\noindent{\bf Proof\ }}{\hfill\BlackBox\\[2mm]}
+\renewcommand\qedsymbol{$\blacksquare$}
+
+% 以下环境中的字体是斜体
+\newtheorem{myThm}{Theorem}
+\newtheorem{myFact}{Fact}
+\newtheorem{myClaim}{Claim}
+\newtheorem{myLemma}{Lemma}
+\newtheorem{myObservation}{Observation}
+\newtheorem{myProp}{Proposition}
+\newtheorem{myProperty}{Property}
+\newtheorem{myCor}{Corollary}
+
+% 以下环境中的字体是正体
+\theoremstyle{definition}
+\newtheorem{myAssum}{Assumption}
+\newtheorem{myConj}{Conjecture}
+\newtheorem{myDef}{Definition}
+\newtheorem{myExample}{Example}
+\newtheorem{myNote}{Note}
+\newtheorem{myProblem}{Problem}
+\newtheorem{myRemark}{Remark}
+\newtheorem*{myProofSketch}{Proof Sketch}
+\newtheorem*{myAnalysis}{\underline{Analysis}} 
 ```
+
+
 
 ## 解释
 1. ```\xxnote```命令：

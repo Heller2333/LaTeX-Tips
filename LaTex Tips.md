@@ -145,13 +145,37 @@
 1. 要在图例中对表格的内容充分的解释。
 2. 控制表格宽度
 3. 控制表格行高
-4. \label要在\caption后面，否则虽然不会报错，但实际的编号是错的
+4. ```\label```要在```\caption```后面，否则虽然不会报错，但实际的编号是错的
 
 ### 引用
 包括引用规范与常见会议/期刊的引用举例，请参考[该篇笔记](./Reference.md)。
 
 ### 宏
 将常用符号以及操作符定义为宏，请参考[该文件](./macros.tex)。
+
+### 多文件编译
+常用于投稿时产生正文与附录，假设正文位于```main.tex```中，附录位于```supp.tex```中 ：
+1. **作为同一个文件编译**：使用```\input```命令在正文末尾插入：
+```latex
+\bibliography{xxx} % bib文件
+
+% 添加附录，使用\input命令将supplementary.tex中的内容加入
+\newpage
+\appendix
+\input{supp}
+
+\end{document}
+```
+```\input```命令的本质是粘贴，```supp.tex```中不需要有完整的文件结构，只需要有LaTeX代码片段即可。
+
+2. **作为不同文件编译**：在```main.tex```开头加入
+```latex
+\usepackage{xr}
+\externaldocument{supp}
+```
+在```supp.tex```开头加入
+```latex
+```
 
 ## 写作经验
 
@@ -167,11 +191,12 @@
 **匿名化工具**：[Anonymous GitHub](https://anonymous.4open.science/)，用于论文中或者rebuttal期间匿名提交代码/图片等补充材料
 
 **使用**：
-
 1. 访问[Anonymous GitHub](https://anonymous.4open.science/), 利用github账号登录
 2. 选择要匿名化的repo
 3. 自定义有效期，以及匿名化后的名称
 4. 这个网页会自动处理你的仓库，然后替换你填写的需要匿名化的关键字，然后给出一个网页url，就是匿名后的repo地址
+
+### Beamer
 
 ## 参考资料
 
