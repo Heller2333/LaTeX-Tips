@@ -37,9 +37,15 @@
       
       <div align=center><img src="./images/IguanaTeX.png" alt="image-20220919215903881" style="zoom:50%;" /></div>
    
-   3. **Tips**: ctrl+z会回退到上一次编译时的状态，而不是上一次操作，在IguanaTex中要慎用撤回键！
+   3. **慎用ctrl+z撤回**: ctrl+z会回退到上一次编译时的状态，而不是上一次操作，在IguanaTex中要慎用撤回键！
 
-   4. **设置页面宽度**：```\usepackage[a4paper, total={4.4cm, 4in}]{geometry}```
+   4. **设置页面宽度**：```\usepackage[a4paper, total={4.4cm, 4in}]{geometry}```，更改其中```4cm```参数调整宽度
+
+   5. **设置行高**：
+   ```latex
+      \usepackage{setspace}
+      \linespread{1.5}
+   ```
 
 2. **语法检查**：[Grammarly](https://app.grammarly.com/), [WordTune](https://app.wordtune.com/)
 
@@ -106,12 +112,6 @@
     \hly{some information of $f_t$} # 使用
     ```
 
-11. 定义宏：
-    
-    1. \newcommand\sbr[1]{\left( #1 \right)}
-    2. \newcommand\inner[2]{\langle #1, #2 \rangle}
-
-
 
 13. 当篇幅不符合要求（过长或过短）
     在overleaf中更换TeX Live版本，有些版本编译出来的篇幅较长、有些较短，这种方法不会影响正文内容的正常显示
@@ -149,6 +149,9 @@
 
 ### 引用
 包括引用规范与常见会议/期刊的引用举例，请参考[该篇笔记](./Reference.md)。
+
+### 宏
+将常用符号以及操作符定义为宏，请参考[该文件](./macros.tex)。
 
 ## 写作经验
 
