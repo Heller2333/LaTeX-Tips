@@ -41,67 +41,28 @@
 
    4. **设置页面宽度**：```\usepackage[a4paper, total={4.4cm, 4in}]{geometry}```，更改其中```4cm```参数调整宽度
 
-   5. **设置行高**：
+   5. **设置行距**：
    ```latex
       \usepackage{setspace}
-      \linespread{1.5}
+      \linespread{1.5} % 1.5倍行距
    ```
 
 2. **语法检查**：[Grammarly](https://app.grammarly.com/), [WordTune](https://app.wordtune.com/)
+    1. Grammarly插件：VSCode
 
-3. **LaTeX OCR**：[mathpix](https://mathpix.com/)——从图片中识别LaTeX公式，适合与[IguanaTex](#IguanaTex)配合使用。
+3. [Mathpix](https://mathpix.com/)
+    1. 用途：LaTeX OCR——从图片中识别LaTeX公式，适合与[IguanaTex](#IguanaTex)配合使用。
 
 ## LaTeX技巧
 
 1. 如果有很多章节，不同章节使用一个TeX文件单独写，使用input命令插入即可，使得文件的逻辑更加清晰
-2. 使用\textbf{xxxx}~~ 可以达到与\paragraph{xxxx}类似的效果，区别在于前者段落间的间距更小，可以在需要节省空间时使用。
-3. 当需要插入多幅图片时：
-
-```latex
-\begin{figure*}[!t]
-  \centering
-  \subfigure[nameA]{ 
-      \label{fig:nameA} 
-      \includegraphics[clip, trim=xcm xcm xcm xcm,width=0.3\textwidth]{nameA.pdf}}       
-      \hspace{3mm}
-  \subfigure[nameB]{ 
-      \label{fig:nameB}
-      \includegraphics[clip, trim=xcm xcm xcm xcm, width=0.3\textwidth]{nameB.pdf}}  
-      \hspace{3mm}   
-  \subfigure[nameC]{ 
-      \label{fig:nameC}
-      \includegraphics[clip, trim=xcm xcm xcm xcm, width=0.3\textwidth]{nameC.pdf}}
-  \caption{My caption.}
-  \label{fig:xxx}
-\end{figure*}
-```
-
-其中trim的4个参数分别代表左下右上 
-
-注：如果遇到 "Missing number, treated as zero" 错误，则可能是因为subfigure缺少宽度数值导致，解决方案：
-
-```latex
-\begin{figure*}[!t]
-  \centering
-  \begin{subfigure}[b]{\textwidth}{ 
-      \label{fig:nameA} 
-      \includegraphics[clip, trim=xcm xcm xcm xcm,width=0.3\textwidth]{nameA.pdf}}       
-      \hspace{3mm}
-  \end{subfigure}
-\end{figure*}
-```
+2. 使用```\textbf{}~~```可以达到与```\paragraph{}```类似的效果，区别在于前者段落间的间距更小，可以在需要节省空间时使用。
 
 4. \setlength\itemsep{0em}
 
 5. \setcounter{AlgoLine}{0}——从1开始
 
-6. \paragraph and \textbf
-
 7. \input
-
-8. command file
-
-9. 更改页面大小：\usepackage[a4paper, total={7cm, 4in}]{geometry}
 
 10. 自定义字体背景色
     
@@ -112,11 +73,10 @@
     \hly{some information of $f_t$} # 使用
     ```
 
-
 13. 当篇幅不符合要求（过长或过短）
     在overleaf中更换TeX Live版本，有些版本编译出来的篇幅较长、有些较短，这种方法不会影响正文内容的正常显示
 
-14. 文章中引用公式要用\eqref{}而非直接用\ref{}
+14. 文章中引用公式要用\eqre„f{}而非直接用\ref{}
 
 16. 竖线的使用
 * 集合里用\mid，例如
@@ -139,6 +99,39 @@
 ### 图片
 
 1. 插入图片需要使用pdf，否则放大之后会模糊
+2. 当需要插入多幅图片时：
+```latex
+\begin{figure*}[!t]
+  \centering
+  \subfigure[nameA]{ 
+      \label{fig:nameA} 
+      \includegraphics[clip, trim=xcm xcm xcm xcm,width=0.3\textwidth]{nameA.pdf}}       
+      \hspace{3mm}
+  \subfigure[nameB]{ 
+      \label{fig:nameB}
+      \includegraphics[clip, trim=xcm xcm xcm xcm, width=0.3\textwidth]{nameB.pdf}}  
+      \hspace{3mm}   
+  \subfigure[nameC]{ 
+      \label{fig:nameC}
+      \includegraphics[clip, trim=xcm xcm xcm xcm, width=0.3\textwidth]{nameC.pdf}}
+  \caption{My caption.}
+  \label{fig:xxx}
+\end{figure*}
+```
+其中trim的4个参数分别代表左下右上 
+
+注：如果遇到 "Missing number, treated as zero" 错误，则可能是因为subfigure缺少宽度数值导致，解决方案：
+
+```latex
+\begin{figure*}[!t]
+  \centering
+  \begin{subfigure}[b]{\textwidth}{ 
+      \label{fig:nameA} 
+      \includegraphics[clip, trim=xcm xcm xcm xcm,width=0.3\textwidth]{nameA.pdf}}       
+      \hspace{3mm}
+  \end{subfigure}
+\end{figure*}
+```
 
 ### 表格
 
@@ -147,8 +140,15 @@
 3. 控制表格行高
 4. ```\label```要在```\caption```后面，否则虽然不会报错，但实际的编号是错的
 
+### 算法
+请参考[该篇笔记](./files/algo.md)，包括：
+1. 不同算法包的区别
+2. 如何引用算法特定行
+
 ### 引用
-包括引用规范与常见会议/期刊的引用举例，请参考[该篇笔记](./files/Reference.md)。
+请参考[该篇笔记](./files/Reference.md)，包括：
+1. 引用规范
+2. 常见会议/期刊的引用举例
 
 ### 宏
 将常用符号以及操作符定义为宏，请参考[该文件](./files/macros.md)。
