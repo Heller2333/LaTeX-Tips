@@ -219,4 +219,5 @@ TODO
 ## 参考资料
 
 1. [常见符号及其对应的LaTeX表示](./materials/LatexSymbol.pdf)
-2. 赵鹏师兄之前做的[相关内容](./materials/LaTeXAcademicWriting.pdf)
+2. [Word/Powerpoint中的LaTeX写法](./materials/WordLatex.pdf)
+3. 赵鹏师兄之前做的[相关内容](./materials/LaTeXAcademicWriting.pdf)
