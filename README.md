@@ -24,8 +24,12 @@
 
 9. Method/approach是方法论层面，algorithm是具体实现
 
+10. TODO
+
 ## 平台
-包括两种：本地+Github、Overleaf以及两种平台之间的同步方式，请参考[该篇笔记](./files/Platform.md)。
+请参考[该篇笔记](./files/Platform.md)，包括：
+1. 两类编译平台：本地+Github、Overleaf
+2. 两种平台之间的同步方式
 
 ## 工具
 
@@ -96,6 +100,8 @@
     \def \indicator {\mathbbm{1}}
     ```
 
+18. TODO
+
 ### 图片
 
 1. 插入图片需要使用pdf，否则放大之后会模糊
@@ -133,12 +139,15 @@
 \end{figure*}
 ```
 
+3. TODO
+
 ### 表格
 
 1. 要在图例中对表格的内容充分的解释。
 2. 控制表格宽度
 3. 控制表格行高
 4. ```\label```要在```\caption```后面，否则虽然不会报错，但实际的编号是错的
+5. TODO
 
 ### 算法
 请参考[该篇笔记](./files/algo.md)，包括：
@@ -188,6 +197,7 @@
 2. 涉及到一个符号的时候，要加上一些描述性的信息
 3. 如果段落最后一行只有两三个单词，想办法将其缩进上一行
 4. 不要用next/last section，直接说 section x.x
+5. TODO
 
 ## 其他
 
