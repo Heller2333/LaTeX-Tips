@@ -51,6 +51,14 @@
       \linespread{1.5} % 1.5倍行距
    ```
 
+   6. **快速查看LaTeX源码**：每次都点击'Edit LaTeX display'打开IguanaTex编辑界面查看源码过于繁琐。可以按照如下方式操作：
+        1. 在公式上右键，选择`View Alt Text`
+        <div align=center><img src="./images/IguanaTeX-2.png" alt="image-20220919215903881" style="zoom:50%;" /></div>
+
+        2. 之后即可在右侧工具栏直接查看LaTeX源码 
+        <div align=center><img src="./images/IguanaTeX-3.png" alt="image-20220919215903881" style="zoom:50%;" /></div>
+
+
 2. **语法检查**：[Grammarly](https://app.grammarly.com/), [WordTune](https://app.wordtune.com/)
     1. Grammarly插件：VSCode
 
