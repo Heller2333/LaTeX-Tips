@@ -224,7 +224,7 @@
 TODO
 
 ### 获取arXiv源码
-
+请参考[该篇笔记](./files/arxiv.md)。
 
 ## 参考资料
 
