@@ -231,3 +231,4 @@ TODO
 1. [常见符号及其对应的LaTeX表示](./materials/LatexSymbol.pdf)
 2. [Word/Powerpoint中的LaTeX写法](./materials/WordLatex.pdf)
 3. 赵鹏师兄之前做的[相关内容](./materials/LaTeXAcademicWriting.pdf)
+4. [Writing Mathematical Papers in English](./materials/Writing_Mathematical_Papers_in_English.pdf)
